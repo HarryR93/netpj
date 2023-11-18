@@ -1,0 +1,11 @@
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\bin\Debug\TopupGameApp.exe.config
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\bin\Debug\TopupGameApp.exe
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\bin\Debug\TopupGameApp.pdb
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupApp.csproj.AssemblyReference.cache
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupGameApp.SignupForm.resources
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupGameApp.MainWeb.resources
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupGameApp.Properties.Resources.resources
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupApp.csproj.GenerateResource.cache
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupApp.csproj.CoreCompileInputs.cache
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupGameApp.exe
+C:\Users\Lappland\source\repos\TopupGameApp\TopupGameApp\obj\Debug\TopupGameApp.pdb

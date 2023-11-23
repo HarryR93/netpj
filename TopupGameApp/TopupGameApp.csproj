@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsUserAccount.cs" />
-    <Compile Include="AccountInfo.cs">
+    <Compile Include="AccInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccountInfo.Designer.cs">
-      <DependentUpon>AccountInfo.cs</DependentUpon>
+    <Compile Include="AccInfo.Designer.cs">
+      <DependentUpon>AccInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
@@ -67,8 +67,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AccountInfo.resx">
-      <DependentUpon>AccountInfo.cs</DependentUpon>
+    <Compile Include="StoreDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StoreDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccInfo.resx">
+      <DependentUpon>AccInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
@@ -94,6 +104,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StoreDBDataSet.xsc">
+      <DependentUpon>StoreDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StoreDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoreDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StoreDBDataSet.xss">
+      <DependentUpon>StoreDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StoreDBDataSet1.xsc">
+      <DependentUpon>StoreDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StoreDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoreDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StoreDBDataSet1.xss">
+      <DependentUpon>StoreDBDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

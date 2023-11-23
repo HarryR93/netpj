@@ -14,6 +14,7 @@ namespace TopupGameApp
     public partial class SignupForm : Form
     {
         public bool isSignUp = false;
+        public bool State = false;
         public SignupForm(bool isSignUp)
         {
             this.isSignUp = isSignUp;
@@ -72,6 +73,11 @@ namespace TopupGameApp
             if (Convert.ToBoolean(myCommand.Parameters["@Check"].Value.ToString()))
             {
                 MessageBox.Show("Dang nhap thanh cong");
+                UserAccount.setCurrentUsername(txtName.Text);
+                UserAccount.setCurrentPassword(txtPassword.Text);
+                this.Hide();
+                MainWeb mainWeb = new MainWeb(true);
+                mainWeb.ShowDialog();
             }
             else
             {
@@ -79,7 +85,6 @@ namespace TopupGameApp
 
             };
             myConnection.Close();
-
             this.Close();
         }
 
@@ -87,7 +92,6 @@ namespace TopupGameApp
         {
             string strConnectString = System.Configuration.ConfigurationSettings.AppSettings["MyConnectString"]
                                .ToString();
-
             string strCommand = "Insert into ACCOUNT (usn, pwd) values (" +
                 " '" + txtName.Text + "'," +
                 " '" + txtPassword.Text + "')";
@@ -108,6 +112,7 @@ namespace TopupGameApp
             {
                 SignUplb.Text = "LOG IN";
                 btnSignup.Text = "Log In";
+                Text = "Log In";
             }
 
         }
